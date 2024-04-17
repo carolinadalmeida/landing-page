@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+#nav-menu a {
+
+    color: white;
+    text-decoration: none;
+}
+
+#nav-menu a:hover {
+    border-bottom: 3px solid orange;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+#nav-menu{
+
+    display: flex;
+    float: right;
+    margin-right: 8%;
+    clear: both;
+    font-size: 25px;
+}
+
+#formulario{
+
+    background-color: white;
+    width: 1106px;
+    height: 342px;
+}
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5%;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.textinho {
+    color:white;
+    font-size: 48px;
+    text-align: end;
+    margin-right: 70px;
+
+}
+
+.textinho2 {
+    color: white;
+    margin-left: 25%;
+    margin-top: 10%;
+    font-size: 20px;
+}
+
+.form {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(199, 199, 199, 0.13);
+}
+
+.form_aviao {
+    padding: 50px;
+    display: flex;
+    width: 80%;
+}
+
+.label {
+    display: block;
+}
+
+#nav_form{
+    display: flex;
+    float: center;
+}
+#selecionado{
+    color: orange;
+    border-bottom: 3px solid orange;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
