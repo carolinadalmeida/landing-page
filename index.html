@@ -7,11 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
-    <div id="background">
-        <img src="/imagens/imagem-principal.png" alt="fundo">   
+    
+    <div id="background" style="position: absolute;">
+        <img src="/imagens/imagem-principal.png"  alt="fundo">   
     </div>
     <div>
         <header>
@@ -36,7 +38,7 @@
     <div class="form">
         <nav id="nav_form">
             <ul><a href="" id="selecionado">Buy Tickets</a></ul>
-            <ul>Check your flight status</ul>
+            <ul><a href="" id="selecionado"> Check your flight status</a></ul>
         </nav>
         <hr>
         <div class="form_aviao">
@@ -52,72 +54,177 @@
 
         </div>
     
-        <div class="form_aviao">
-            <label for="from" class="label">From <input type="FROM"></label>
-            <label for="to" style= "margin-left: 30px;" class="label">To <input type="FROM"></label>
-            <label for="date" style= "margin-left: 30px;" class="label">Departure date<input type="date"></label>
+        <div class="form_container" style="margin-left: 12%;">
+            <div id="form">
+                <label for="from">From</label>
+                <input type="FROM" class="inputs" placeholder="Select Departure">
+            </div>
+            <div id="form">
+                <label for="to" style="margin-left: 30px;">To</label>
+                <input type="FROM" class="inputs" placeholder="Select Destination" style="margin-left: 30px;">
+            </div>
+            <div class="teste">
+                <label for="date" id="form">Departure date</label>
+                <input type="date" class="inputs" placeholder="dd/mm/yy">
+            </div>
+        </div>
+        <div class="form_container" style="margin-left: 15%;">            
+            <div class="check-in">
+                <button>Book now!</button>
+                <div class="teste">
+                    <label for="passengers" id="form">Passengers</label>
+                    <input type="number" placeholder="2 adult" class="inputs">
+                </div>
+            </div>
         </div>
 
-        <div class="form_aviao" style="width: 55%; margin-left: 18%;">
-            <button style="width: 250px; height: 30px; margin-top: 10px; color: white; background-color: orange; border-radius: 5px;">Book now!</button>
-            <label for="passengers" style= "margin-left: 30px;" class="label">Passengers <input type="number"></label>
-        </div>
-
-        <div class="form_aviao" style="margin-left: 30%;">
-            <img src="/imagens/logo_form_aviao.png" alt="logo_form_aviao">
+        <div class="form_aviao" style="margin-left: 35%;">
+            <img src="/imagens/logo_form_aviao.png" alt="logo_form_aviao"> 
         </div>
     </div>
-
-    <div class="form" style="display: flex; justify-content: start; background-color: #fffce4;">
+    <div class="msg_alert">
         
-        <img src="/imagens/alerta.png" alt="alerta">
-       
-        <div style="display: grid; justify-content: right; margin-left: 25px;">
-            <span>Active travel alert</span>
+        <img src="/imagens/alerta.png" alt="alerta" style="width: 45px; height: 45px; margin: 10px;">
+    
+        <div style="display: grid; justify-content: right; margin-left: 25px; margin-top: 8px;">
+            <span style="margin-bottom: -20px;">Active travel alert</span>
             <span>There is a travel warning issued by the government due to the coronavirus epidemic (COVID-19). <a href="#">More details</a></span>
         </div>
     </div>
 
-    <div class="form">
-        <nav id="nav_form" style="display: block;">
-            <ul>Traveling from your location</ul>
-            <ul>round trip - one passenger</ul>
-        </nav>
-    
-        <div class="form_aviao" style="display: block;">
-            <div class="form_aviao">
+    <nav id="nav_form" style="display: block;">
+        <ul>Traveling from your location</ul>
+        <ul style="color: #4E4E4E;">round trip - one passenger</ul>
+    </nav>
+
+    <div class="grid_container" >
+        <div class="form_aviao">
+            <div class="card"> 
                 <img src="/imagens/london.png" alt="london">
-                <div style="background-color: #F5F8FF; height: 150px; width: 16vw; display: grid;"> 
+                <div class="span_ajuste">
                     <span> London</span>
                     <span> Apr 5-8</span>
                     <span> Direct flight - 3h 15 min</span>
+                    <img src="/imagens/flybe.png" alt="flybe">
+                    <span style="margin-left: 120%;">€35</span>
+                    
                 </div>
             </div>
-            <div class="form_aviao">
-                <img src="/imagens/london.png" alt="london">
-                <div style="background-color: #F5F8FF; height: 150px; width: 16vw; display: grid;"> 
-                    <span> London </span>
-                    <span> Apr 5-8 </span>
+        </div>
+        <div class="form_aviao">
+            <div class="card">
+                <img src="imagens/rome.png" class="imagens_grid" alt="london">
+                <div class="span_ajuste">
+                    <span> Rome </span>
+                    <span> Oct 5-8 </span>
                     <span> Direct flight - 3h 15 min </span>
+                    <img src="imagens/jetBlue.png" alt="jetblue">
+                    <span style="margin-left: 120%">€45</span>
+                    
                 </div>
             </div>
-            <div class="form_aviao">
-                <img src="/imagens/london.png" alt="london">
-                <div style="background-color: #F5F8FF; height: 150px; width: 16vw; display: grid;"> 
-                    <span> London </span>
-                    <span> Apr 5-8 </span>
+        </div>
+        </div>
+        <div class="grid_container" >
+        <div class="form_aviao"> 
+            <div class="card">
+                <img src="imagens/madrid.png" alt="london">
+                <div class="span_ajuste">
+                    <span> Madrid </span>
+                    <span> Jun 5-8 </span>
                     <span> Direct flight - 3h 15 min </span>
+                    <img src="imagens/Lufthansa.png" alt="luftthansa">
+                    <span style="margin-left: 120%">€25</span>
                 </div>
             </div>
-            <div class="form_aviao">
-                <img src="/imagens/london.png" alt="london">
-                <div style="background-color: #F5F8FF; height: 150px; width: 16vw; display: grid;"> 
-                    <span> London </span>
-                    <span> Apr 5-8 </span>
+        </div>
+        
+        <div class="form_aviao">
+            <div class="card"> 
+                <img src="imagens/paris.png" alt="london">
+                <div class="span_ajuste">
+                    <span> Paris </span>
+                    <span> Dez 5-8 </span>
                     <span> Direct flight - 3h 15 min </span>
+                    <img src="imagens/airfrance.png" alt="airfrance">
+                    <span style="margin-left: 120%">€55</span>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+    <div class="container-discover" >
+        <div class="discover-cards">
+            <div class="discover-notice"> 
+                <img class="pedreiro" src="/imagens/london.png" alt="london">
+                <div class="span_ajuste">
+                    <div class="text-notice">
+                        <span> Latest travel restrictions</span>
+                        <p>We provide information on the entry requirements for all countries so you can plan your flight smoothly</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="discover-cards">
+            <div class="discover-notice">
+                <img class="pedreiro" src="imagens/rome.png" class="imagens_grid" alt="london">
+                <div class="span_ajuste">
+                    <div class="text-notice">
+                        <span> Install our mobile app</span>
+                        <p>Our mobile app provides real-time information when you are at the airport</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="discover-cards">
+            <div class="discover-notice"> 
+                <img class="pedreiro" src="imagens/paris.png" alt="london">
+                <div class="span_ajuste">
+                    <div class="text-notice">
+                        <span> The most beautiful destinations</span>
+                        <p>Have you ever considered visiting Easter Island or Alaska? These are the most unique destinations in 2022</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer >
+        
+        <div style="display: flex;justify-content: space-between ; margin-right: 10%; margin-left: 10%;">
+            <div>
+            <nav id="passengers-um" style="line-height: 70%;">
+                <ul style="font-size: 18px; font-weight: 500; color: #4e4e4e;">Passangers</ul>
+                <ul style="color: #727171;  font-size: 18px;">Flights</ul>
+                <ul style="color: #727171;  font-size: 18px;">Airlines</ul>
+                <ul style="color: #727171;  font-size: 18px;">Park</ul>
+                <ul style="color: #727171;  font-size: 18px;">Security Wait Times</ul>
+                <ul style="color: #727171;  font-size: 18px;">Map</ul>
+                <ul style="color: #727171;  font-size: 18px;">Shop & Dine</ul>
+            </nav>
+            </div>
+            <div>
+            <nav id="passengers-dois" style="line-height: 70%;">
+                <ul style="font-size: 18px; font-weight: 500; color:#4e4e4e">Business and Community</ul>
+                <ul style="color: #727171;">About us</ul>
+                <ul style="color: #727171;">Career</ul>
+
+                <div class="follow_us" style="font-size: 18px; font-weight: 500; margin-top: 30%;">
+                    <ul style="color:#4e4e4e;">Follow us</ul>
+                    <img src="imagens/social_media.png" alt= "social_media">
+                </div>
+            </nav>
+            </div>
+
+            <div id="div-un">
+                <nav id="passengers-tres" style="line-height: 70%;">
+                    <ul style="font-size: 18px; font-weight: 500; color: #4e4e4e;">Passangers</ul>
+                    <ul style="color: #727171;">Report Property</ul>
+                    <ul style="color: #727171;" >Sign Up</ul>
+                    <ul style="color: #727171;">Contact us</ul>
+                    <ul style="color: #727171;">Newsroom</ul>
+                </nav>
+            </div>
+        </div>   
+    </footer>
 </body>
 </html>

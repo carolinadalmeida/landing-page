@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
     padding: 0;
@@ -12,7 +13,7 @@ body{
 }
 
 #nav-menu a:hover {
-    border-bottom: 3px solid orange;
+    border-bottom: 3px solid #ffa200;
     border-radius: 3px;
     transition: 0.2s;
 }
@@ -31,11 +32,19 @@ body{
     width: 1106px;
     height: 342px;
 }
+
 #form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -5%;
+    display: grid;
+}
+.text-notice{
+    width: 350px;
+}
+.text-notice p{
+    color: #727171;
+}
+.text-notice span{
+    color: #4e4e4e;
+    font-weight: 500;
 }
 
 #background {
@@ -57,16 +66,16 @@ body{
 
 .textinho2 {
     color: white;
-    margin-left: 25%;
+    margin-left: 159px;
     margin-top: 10%;
     font-size: 20px;
 }
 
-.form {
+.form{
     background-color: white;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
@@ -74,23 +83,120 @@ body{
 }
 
 .form_aviao {
-    padding: 50px;
     display: flex;
-    width: 80%;
+    justify-content: space-between;
 }
-
+.grid_container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    width: 100%;
+}
 .label {
     display: block;
 }
 
 #nav_form{
     display: flex;
-    float: center;
+    float: center; 
+    height: 40px;
+    margin-left: 7%;
 }
-#selecionado{
-    color: orange;
-    border-bottom: 3px solid orange;
+#selecionado {
+    color: #4E4E4E;
     border-radius: 3px;
     text-decoration: none;
+    
+}
+
+#selecionado:hover{
+    border-bottom: 3px solid #ffa200;
+    color: #ffa200;
+    
+}
+
+.msg_alert{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #fffce4;
+    margin-top: 35px;;
+    width: 80%;
+    height: 70px;
+}
+.teste{
+    position: relative;
+    margin-left: 30px;
+    
+}
+footer{
+    background-color: #c2cff0;
+    height: 250px;
+}
+
+.card{
+    background-color: #F5F8FF;
+    display: flex;
+    width: 600px;
+    
+
+}
+.span_ajuste{
+    display: grid;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.check-in{
+    display: flex;
+    margin-top: 50px;
+    margin-left:23% ;
+}
+.check-in button{
+    border: none; width: 250px; 
+    border-radius: 5px;
+    height: 40px; color: white; 
+    background-color: #ff7100;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: medium;
+}
+
+
+.inputs {
+    width: 244px;
+    height: 32px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.form_container{
+    display:flex;
+    margin-left: 20px;
+
+}
+.form_container input{
+    border-radius: 5px solid rgb(173, 172, 172);
+}
+
+.follow_us{
+
+    margin-left: 100px;
+    margin-right: 15%;
+}
+#div-un{
+    display: flex;
+  float: right;
+}
+.container-discover{
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+    width: 100%;
+}
+.pedreiro{
+    width: 400px;
+    height: 180px;
 }
 
